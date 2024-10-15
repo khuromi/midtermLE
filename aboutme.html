@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+
+  <title>Worksheet 2.1 Basic Info</title>
+  <header>
+    <a href="index.html" class="logo"><img src="img/logo.png" alt="" /></a>
+
+    <ul class="navmenu">
+      <li><a href="aboutMe.html">About Me</a></li>
+      <li><a href="worksheets.html">Worksheets</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+    <div class="nav-icon">
+      <a href="#"><i class="bx bx-search-alt-2"></i></a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="img/img1.jpg" />
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/img2.jpg" />
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/img3.jpg" />
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)"
+      ><i class="bx bx-chevron-left"></i
+    ></a>
+    <a class="next" onclick="plusSlides(1)"
+      ><i class="bx bx-chevron-right"></i
+    ></a>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+
+  <section class="basicInfo">
+    <table>
+      <thead>
+        <th><b>Personal Information</b></th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Surname</td>
+          <td>
+            <b>Baylen</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Firstname</td>
+          <td>
+            <b>Joanna</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Middlename</td>
+          <td>
+            <b>Caratao</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+            <b>Female</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Civil Status</td>
+          <td>
+            <b>Single</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Nationality</td>
+          <td>
+            <b>Filipino</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Hobby</td>
+          <td>
+            <b>Listening to music.</b>
+          </td>
+        </tr>
+      </tbody>
+      <br />
+      <thead>
+        <th><b>Educational Background</b></th>
+      </thead>
+      <tr>
+        <td>Tertiary Education</td>
+        <td>
+          <b>Ilocos Sur Polytechnic State College</b>
+        </td>
+      </tr>
+      <tr>
+        <td>Secondary Education</td>
+        <td>
+          <b>Tinajeros National High School</b>
+        </td>
+      </tr>
+      <tr>
+        <td>Primary Education</td>
+        <td>
+          <b>Tinajeros Elementary School</b>
+        </td>
+      </tr>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>
+      Ms.Juliet Paulo <br />
+      Copyright @2024. All Rights Reserved.
+    </p>
+  </footer>
+  <script src="java.js"></script>
+</html>

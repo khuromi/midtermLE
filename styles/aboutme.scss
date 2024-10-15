@@ -1,0 +1,7 @@
+@import "variables";
+
+header.sticky {
+  background: $darkgray;
+  padding: $s20px $s10prcnt;
+  box-shadow: $bluegray;
+}

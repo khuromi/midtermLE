@@ -1,0 +1,264 @@
+section {
+  padding: 5% 10%;
+}
+
+section img {
+  width: 20rem;
+  max-width: 100%;
+  height: 35rem;
+  margin-left: 150px;
+}
+
+section .main-home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+section .main-home-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .main-home-content h5 {
+  color: #ee1c47;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+section .main-home-content h1 {
+  color: #000;
+  line-height: 1.1;
+  font-size: 65px;
+  font-weight: 600;
+  margin-top: 6px;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+section .main-text {
+  margin-top: 150px;
+}
+
+section .quote {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+section .basicInfo {
+  padding: 5% 10%;
+  margin-left: 20px;
+  overflow-x: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .container {
+  padding: 5% 10%;
+  margin-left: 20px;
+  overflow-x: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .contInfo {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 75%;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 150px;
+  border-style: outset;
+  border-width: 5px;
+  border-color: #dee2e6;
+  border-radius: 15px;
+}
+
+section .head {
+  font-size: 25px;
+  padding: 10px;
+}
+
+section .module {
+  padding-left: 10px;
+}
+
+section table {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 75%;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 150px;
+  border-style: outset;
+  border-width: 5px;
+  border-color: #dee2e6;
+  border-radius: 15px;
+}
+
+section th {
+  font-size: 25px;
+  float: left;
+  color: #111;
+  padding: 10px;
+}
+
+section td {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #dee2e6;
+  padding: 10px;
+  float: left;
+  width: 50%;
+}
+
+section tbody tr:hover {
+  background-color: #f1f1f1;
+  /* Light gray hover background */
+}
+
+div {
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Fading animation */
+}
+
+div .slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div .mySlides {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+div .mySlides img {
+  width: 28rem;
+  border-radius: 1rem;
+  border-style: outset;
+  border-width: 5px;
+  border-color: #dee2e6;
+  border-radius: 15px;
+}
+
+div .prev,
+div .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+div .next {
+  border-radius: 3px 0 0 3px;
+}
+
+div .prev {
+  border-radius: 3px 0 0 3px;
+}
+
+div .prev:hover,
+div .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+div .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+div .active,
+div .dot:hover {
+  background-color: #717171;
+}
+
+div .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+}
+/*# sourceMappingURL=home.css.map */

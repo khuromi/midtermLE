@@ -1,0 +1,186 @@
+@import "variables";
+
+section {
+  padding: $section-padding;
+
+  img {
+    width: $s20rem;
+    max-width: $header-width;
+    height: $s35rem;
+    margin-left: $s150px;
+  }
+  .main-home {
+    width: $header-width;
+    height: $s100vh;
+    position: $positionRelative;
+    align-items: $toCenter;
+    display: $main-home-display;
+    grid-template-columns: $main-home-grid-template-columns;
+  }
+  .main-home-content {
+    display: $display;
+    h5 {
+      color: $pink;
+      font: {
+        size: $font-size16;
+        weight: $h5-font-weight;
+      }
+    }
+    h1 {
+      color: $dark;
+      line-height: $main-text-h1-line-height;
+      font: {
+        size: $font-size65;
+        weight: $h1-font-weight;
+      }
+      margin: {
+        top: $s6px;
+        right: $s0;
+        bottom: $s10px;
+      }
+    }
+  }
+  .main-text {
+    margin-top: $s150px;
+  }
+  .quote {
+    font-family: $f-family;
+    font-size: $s25px;
+    color: $black;
+    margin-bottom: $s10px;
+  }
+  .basicInfo {
+    @include section;
+  }
+  .container {
+    @include section;
+  }
+  .contInfo {
+    @include border;
+  }
+  .head {
+    font-size: $s25px;
+    padding: $s10px;
+  }
+  .module {
+    padding-left: $s10px;
+  }
+  table {
+    @include border;
+  }
+
+  th {
+    @include thead;
+  }
+  td {
+    border-bottom: {
+      width: $s1px;
+      style: $style;
+      color: $bluewhite;
+    }
+    padding: $s10px;
+    float: $toLeft;
+    width: $s50prcnt;
+  }
+
+  tbody tr:hover {
+    background-color: $lightGray; /* Light gray hover background */
+  }
+}
+
+div {
+  .slideshow-container {
+    max-width: $header-width;
+    position: $positionRelative;
+    margin-top: $s5rem;
+    @include centered;
+  }
+  .mySlides {
+    text-align: $toCenter;
+    margin: {
+      top: $s8rem;
+    }
+    img {
+      width: $s28rem;
+      border-radius: $s1rem;
+      border: {
+        style: $borderOutset;
+        width: $s5px;
+        color: $bluewhite;
+        radius: $s15px;
+      }
+    }
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: $menu-icon-cursor;
+    position: $down-arrow-position;
+    top: $s50prcnt;
+    width: $auto;
+    padding: $font-size16;
+    font-weight: $fontBold;
+    font-size: $s18px;
+    transition: $sec06 $trans;
+    border-radius: $s0 $s3px $s3px $s0;
+    user-select: $none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    border-radius: $s3px $s0 $s0 $s3px;
+  }
+  .prev {
+    border-radius: $s3px $s0 $s0 $s3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: $opacity3;
+  }
+  .dot {
+    cursor: $menu-icon-cursor;
+    height: $s15px;
+    width: $s15px;
+    background-color: $opacity4;
+    border-radius: $s50prcnt;
+    display: $main-btn-display;
+    transition: background-color $sec06 $trans;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: $opacity5;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: $animateFade;
+    animation-duration: $sec15;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: $s04;
+    }
+    to {
+      opacity: $s1;
+    }
+  }
+}
+
+footer {
+  align-items: $toCenter;
+  justify-content: $toCenter;
+  position: $header-position;
+  bottom: $s0;
+  width: $header-width;
+  padding: $s10px;
+  background-color: $darkgray;
+  color: $white;
+  p {
+    text-align: $toCenter;
+  }
+}
